@@ -13,7 +13,7 @@ CREATE TABLE dbo.Basket
 	ID_SKU int,
 	ID_Famaly int,
 	Quantity decimal check (Quantity>0),
-	Value decimal CHECK (Quantity>0), 
+	Value decimal CHECK (Value>0), 
 	PurchaseDate date DEFAULT CURRENT_TIMESTAMP, 
 	DiscountValue decimal,
 	FOREIGN KEY (ID_SKU)  REFERENCES dbo.SKU (ID),
