@@ -1,6 +1,6 @@
 CREATE TABLE dbo.SKU
 	(ID int PRIMARY KEY IDENTITY, 
-	Code as ('s'+ID) UNIQUE ,
+	Code as ('s'+CONVERT([char](10),[ID],0)) UNIQUE ,
 	Name nvarchar(100))
 
 CREATE TABLE dbo.Family 
