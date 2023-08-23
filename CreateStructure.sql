@@ -11,11 +11,11 @@ CREATE TABLE dbo.Family
 CREATE TABLE dbo.Basket
 	(ID int PRIMARY KEY IDENTITY, 
 	ID_SKU int,
-	ID_Famaly int,
+	ID_Family int,
 	Quantity decimal(18,2) check (Quantity>0),
 	Value decimal(18,2) CHECK (Value>0), 
 	PurchaseDate date DEFAULT CURRENT_TIMESTAMP, 
-	DiscountValue decimal,
+	DiscountValue decimal(18,2),
 	FOREIGN KEY (ID_SKU)  REFERENCES dbo.SKU (ID),
 	FOREIGN KEY (ID_Famaly)  REFERENCES dbo.Family (ID))
 
