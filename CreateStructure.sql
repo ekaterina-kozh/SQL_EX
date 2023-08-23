@@ -6,7 +6,7 @@ CREATE TABLE dbo.SKU
 CREATE TABLE dbo.Family 
 	(ID int PRIMARY KEY IDENTITY,
 	SurName nvarchar(100), 
-	BurgerValue decimal)
+	BurgerValue decimal(18,2))
 
 CREATE TABLE dbo.Basket
 	(ID int PRIMARY KEY IDENTITY, 
