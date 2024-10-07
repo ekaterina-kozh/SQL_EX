@@ -1,2 +1,2 @@
 # SQL_EX
-SQL training tasks
+Используя датасет MNIST Fashion (из набора датасетов Tensorflow) научить GAN генерировать образцы одежды, соответственно.
